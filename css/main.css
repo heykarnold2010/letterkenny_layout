@@ -5,6 +5,10 @@ body {
   background-color: #fee6f6;
 }
 
+.bg-dark {
+    background-color: rgb(255, 0, 170) !important;
+}
+
 .container > .row {
   margin-top: 100px;
 }
@@ -56,6 +60,7 @@ body {
 
 .padding-top-sm {
   padding-top: 5%;
+  margin-top: 4%;
 }
 
 .author {
@@ -69,7 +74,37 @@ footer {
   margin-top: 100px;
 }
 
+#contact_footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
 footer p {
   color: rgba(255,255,255,.5);
   padding: 5%;
+}
+
+/***********
+Styles under 600px
+***********/
+
+@media only print and (max-width: 1400px) {
+  .card-img > img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+ p {
+   color: red;
+   font-size: 50%;
+ }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+ p {
+   color: blue;
+   font-size: 200%;
+ }
 }
